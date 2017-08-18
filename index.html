@@ -1,0 +1,99 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+        <title> CSS Grid - Quick Start Guide </title>
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="./public/css/gridstyle.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body class="container">
+        <header class="header">
+            <nav class="top-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link brand" href="#cover">CSS Grids</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#intro">Intro</a></li>
+                        <ul class="sub-list">
+                            <li class="sub-item"><a class="nav-link" href="#item">Grid Item</a></li>
+                            <li class="sub-item"><a class="nav-link" href="#line">Grid Line</a></li>
+                            <li class="sub-item"><a class="nav-link" href="#track">Grid Track</a></li>
+                            <li class="sub-item"><a class="nav-link" href="#cell">Grid Cell</a></li>
+                            <li class="sub-item"><a class="nav-link" href="#area">Grid Area</a></li>
+                            <li class="sub-item"><a class="nav-link" href="#gap">Grid Gap</a></li>
+                        </ul>
+                        <li class="nav-item"><a class="nav-link" href="#container-prop">Container Properties</a></li>
+                            <ul class="sub-list">
+                                <li class="sub-item"><a class="nav-link" href="#temp-columns">grid-template-columns</a></li>
+                                <li class="sub-item"><a class="nav-link" href="#temp-rows">grid-template-rows</a></li>
+                                <li class="sub-item"><a class="nav-link" href="#temp-areas">grid-template-areas</a></li>
+                                <li class="sub-item"><a class="nav-link" href="#temp">grid-template</a></li>
+                                <li class="sub-item"><a class="nav-link" href="#col-gap">grid-column-gap</a></li>
+                                <li class="sub-item"><a class="nav-link" href="#row-gap">grid-row-gap</a></li>
+                                <li class="sub-item"><a class="nav-link" href="#gap">grid-gap</a></li>
+                                <li class="sub-item"><a class="nav-link" href="#justify-items">justify-items</a></li>
+                                <li class="sub-item"><a class="nav-link" href="#align-items">align-items</a></li>
+                                <li class="sub-item"><a class="nav-link" href="#justify-content">align-items</a></li>
+                                <li class="sub-item"><a class="nav-link" href="#align-content">align-content</a></li>
+
+                            </ul>
+
+                </ul>
+            </nav>
+        </header>
+
+        <section id="cover">
+            <figure>
+                <img src="./public/img/cssgrids.jpg">
+                <figure-caption>
+                    <h3>CSS Grid - Quick Start Guide</h3>
+                        <small>A small guide demonstrating the power of CSS Grid, while showing you some of its properties.</small>
+                </figure-caption>
+            </figure>
+        </section>
+
+        <section id="intro">
+            <h3>Introduction</h3>
+                   
+            <p>
+                <small>What is a CSS Grid?</small>
+                CSS Grid <pre>display: grid; </pre> is designed to help you create organized CSS layouts using a grid system.
+                It's similar to using <pre>display: flexbox; </pre> except it is two-dimensional. 
+            </p>
+            <p>
+                <small>Why would you use this?</small>
+                Well, almost everything you know about styling a webpage is a hack.
+                Using tables, floats, and a variety of other tricks to layout a page were just hacks to make some things work.
+            </p>
+
+            <p>
+                All you need is a container. 
+                <xmp>
+                    <div class="container"> 
+                    <section class="container">
+                    <article class="container">
+                </xmp>
+                Then you just style it with: <pre> display: grid </pre>
+                For example:
+                    <xmp>
+                        .container {
+                            display: grid;
+                        } 
+                    </xmp>
+                
+                Pretty simple, right?
+            </p>
+        </section>
+
+
+        <footer>
+
+        </footer>
+
+    </body>
+
+</html>

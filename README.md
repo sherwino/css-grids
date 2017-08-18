@@ -1,7 +1,7 @@
 # CSS Grid
-An HTML and CSS static site that utilizes CSS Grid
+An HTML, JS, and CSS static site that utilizes CSS Grid
 
-The main objective of this site is to get familiar laying out responsive pages without using JavaScript or frameworks like Twitter's Bootstrap.
+The main objective of this site is to get familiar laying out responsive pages without using frameworks like Twitter's Bootstrap.
 
 CSS Grid are compatible with most modern browsers and give us an opportunity to avoid all of the common hacks seen today.
 
@@ -11,7 +11,7 @@ When creating this site I am going to attempt to use all of the properties of CS
 
 First it starts with:
 - [ ] display: grid, inline-grid, subgrid
-- The element on which display: grid is applied. It's the direct parent of all the grid items. In this example container is the grid container.
+    The element on which display: grid is applied. It's the direct parent of all the grid items. In this example container is the grid container.
 
     grid - generates a block-level grid
     inline-grid - generates an inline-level grid
@@ -19,19 +19,19 @@ First it starts with:
 
 Then the grid can be composed of:
 - [ ] grid item
-- The children (e.g. direct descendants) of the grid container.
+    The children (e.g. direct descendants) of the grid container.
 
 - [ ] grid line
-- The dividing lines that make up the structure of the grid. They can be either vertical ("column grid lines") or horizontal ("row grid lines") and reside on either side of a row or column.
+    The dividing lines that make up the structure of the grid. They can be either vertical ("column grid lines") or horizontal ("row grid lines") and reside on either side of a row or column.
 
 - [ ] grid track
-- The space between two adjacent grid lines. You can think of them like the columns or rows of the grid
+    The space between two adjacent grid lines. You can think of them like the columns or rows of the grid
 
 - [ ] grid cell
-- The space between two adjacent row and two adjacent column grid lines. It's a single "unit" of the grid.
+    The space between two adjacent row and two adjacent column grid lines. It's a single "unit" of the grid.
 
 - [ ] grid area
-- The total space surrounded by four grid lines. A grid area may be comprised of any number of grid cells.
+    The total space surrounded by four grid lines. A grid area may be comprised of any number of grid cells.
 
 Grid Properties:
 - [ ] grid-template-columns:
@@ -41,7 +41,7 @@ Grid Properties:
 - [ ] grid-template-areas:   <name>
 
 - [ ] grid-auto-columns:     px, pt, em, fr, %
--
+
 - [ ] grid-auto-rows:        px, pt, em, fr, %
 
 - [ ] grid-auto-flow:        px, pt, em, fr, %

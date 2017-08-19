@@ -2,6 +2,29 @@ body {
     background: skyblue;
 }
 
-.container {
+.page-container {
     display: grid;
+    grid-template-columns: 1fr, 2fr, 1fr;
+    /*grid-auto-rows: minmax(100px, 1080px);*/
+    background: #333;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.cover {
+    /*display: inline-block;
+    width: 40%;*/
+    /*grid-template-columns: 20%;
+    grid-gap: 1em;*/
+    background: blue;
+}
+
+img {
+  width: 100%;
+}
+
+.header {
+  grid-column: 1/3;
+  grid-row: 1;
+  background: #fff;
 }

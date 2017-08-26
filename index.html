@@ -4,7 +4,7 @@
 
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"> -->
         <title> CSS Grid - Quick Start Guide </title>
 
         <!-- Stylesheets -->
@@ -13,10 +13,10 @@
     </head>
 
     <body class="page-container">
-        <header class="header">
-            <nav class="top-nav">
+        <header class="side-container header">
+            <nav class="side-nav">
                 <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link brand" href="#cover">CSS Grids</a></li>
+                    <li class="nav-item"><a class="nav-link brand" href="#cover">CSS Grid</a></li>
                     <li class="nav-item"><a class="nav-link" href="#intro">Intro</a></li>
                         <ul class="sub-list">
                             <li class="sub-item"><a class="nav-link" href="#item">Grid Item</a></li>
@@ -56,33 +56,45 @@
             </figure>
         </section>
 
+        <!-- <figure id="cover">
+          <img src="./public/img/cssgrids.jpg">
+          <figure-caption>
+            <h3>CSS Grid - Quick Start Guide</h3>
+            <small>A small guide demonstrating the power of CSS Grid, while showing you some of its properties.</small>
+          </figure-caption>
+        </figure> -->
+
         <section id="intro">
+
             <h3>Introduction</h3>
 
+            <h4>What is a CSS Grid?</h4>
             <p>
-                <small>What is a CSS Grid?</small>
-                CSS Grid <pre>display: grid; </pre> is designed to help you create organized CSS layouts using a grid system.
-                It's similar to using <pre>display: flexbox; </pre> except it is two-dimensional.
+                CSS Grid <code>display: grid; </code> is designed to help you create organized CSS layouts using a grid system.
+                It's similar to using <code>display: flexbox; </code> except it is two-dimensional.
             </p>
+
+            <h4>Why would you use this?</h4>
             <p>
-                <small>Why would you use this?</small>
                 Well, almost everything you know about styling a webpage is a hack.
                 Using tables, floats, and a variety of other tricks to layout a page were just hacks to make some things work.
             </p>
 
             <p>
-                All you need is a container.
+                All you need is a container or a wrapper around your content.
                 <xmp>
                     <div class="container">
                     <section class="container">
                     <article class="container">
                 </xmp>
-                Then you just style it with: <pre> display: grid </pre>
+                Then you just style it with: <code> display: grid </code>
                 For example:
                     <xmp>
+                      <style>
                         .container {
                             display: grid;
                         }
+                      </style>
                     </xmp>
 
                 Pretty simple, right?

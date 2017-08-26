@@ -70,3 +70,4 @@ What I am not certain about is what kind of content I am going to put on it. Pos
 ## Change Log
 - v0.01 - Initial Commit / Readme
 - v0.02 - Created html file, css file, and intro content.
+- v0.021 - Small changes to css grid layout

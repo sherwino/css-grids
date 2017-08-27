@@ -12,11 +12,24 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
-    <body class="page-container">
-        <header class="side-container header">
+    <body class="page-container top">
+        <aside class="side-container header">
+
+          <div class="grid-brand">
+            <div id="overlay">CSS Grid</div>
+            <div class="grid-btn0">Intro</div>
+            <div class="grid-btn1">Properties</div>
+            <div class="grid-btn2">grid-template-columns</div>
+            <div class="grid-btn3">grid-template-rows</div>
+            <div class="grid-btn4">grid-template-areas</div>
+            <div class="grid-btn5">grid-template</div>
+            <div class="grid-btn6">grid-column-gap</div>
+            <div class="grid-btn7">grid-row-gap</div>
+          </div>
+
             <nav class="side-nav">
                 <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link brand" href="#cover">CSS Grid</a></li>
+                    <li class="nav-item"><a class="nav-link brand" href="#top">CSS Grid</a></li>
                     <li class="nav-item"><a class="nav-link" href="#intro">Intro</a></li>
                         <ul class="sub-list">
                             <li class="sub-item"><a class="nav-link" href="#item">Grid Item</a></li>
@@ -44,7 +57,7 @@
 
                 </ul>
             </nav>
-        </header>
+        </aside>
 
         <section id="cover">
             <figure>
@@ -67,6 +80,46 @@
         <section id="intro">
 
             <h3>Introduction</h3>
+            <h4>What is a CSS Grid?</h4>
+            <p>
+                CSS Grid (<code>display: grid; </code>) is designed to help you create organized CSS layouts using a grid system.
+                It's similar to using (<code>display: flexbox; </code>) except it is two-dimensional.
+            </p>
+
+            <h4> Mozilla Developer Network defines it as:</h4>
+            <quote>
+              The grid CSS property is a shorthand property that sets all of the explicit grid properties (grid-template-rows,
+              grid-template-columns, and grid-template-areas), all the implicit grid properties (grid-auto-rows, grid-auto-columns,
+              and grid-auto-flow), and the gutter properties (grid-column-gap and grid-row-gap) in a single declaration.
+            </quote>
+
+            <h4>Why would you use this?</h4>
+            <p>
+                Well, almost everything you know about styling a webpage is a hack.
+                Using tables, floats, and a variety of other tricks to layout a page were just hacks to make some things work.
+            </p>
+
+            <p>
+                All you need is a container or a wrapper around your content.
+                <xmp>
+                    <section class="container">
+                </xmp>
+
+                Then you just style it with: <code> display: grid </code>
+                For example:
+                    <xmp>
+                        .container {
+                            display: grid;
+                        }
+                    </xmp>
+
+                Pretty simple, right?
+            </p>
+        </section>
+
+        <section id="grid-features">
+
+            <h3>Grid Features</h3>
 
             <h4>What is a CSS Grid?</h4>
             <p>
@@ -90,17 +143,14 @@
                 Then you just style it with: <code> display: grid </code>
                 For example:
                     <xmp>
-                      <style>
                         .container {
                             display: grid;
                         }
-                      </style>
                     </xmp>
 
                 Pretty simple, right?
             </p>
         </section>
-
 
         <footer>
 

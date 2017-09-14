@@ -17,6 +17,43 @@ First it starts with:
     inline-grid - generates an inline-level grid
     subgrid - if your grid container is itself a grid item (i.e. nested grids), you can use this property to indicate that you want the sizes of its rows/columns to be taken from its parent rather than specifying its own.
 
+    One thing to note that wasn't clear to me when I first started using CSS Grid, is that when you select a column or row.
+    You are selecting the Grid Line...
+
+    i.e. - when you define grid-column: 3; you are selecting the third line, not the third column.
+------------
+
+
+    ```
+  #garden {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+
+  #water-1 {
+    grid-area: 1 / 4 / 6 / 5;
+  }
+
+  #water-2 {
+    grid-area: 2/3 / 5/6;
+}
+
+  #other-sample {
+    grid-template-columns: 50px 1fr 1fr 1fr 50px;
+  }
+```
+
+
+If grid items aren't explicitly placed with grid-area, grid-column, grid-row, etc., they are automatically placed according to their order in the source code. We can override this using the order property, which is one of the advantages of grid over table-based layout.
+
+By default, all grid items have an order of 0, but this can be set to any positive or negative value, similar to z-index.
+This is for later ^^^^^ overlapping
+
+
+
+-------------
+
 Then the grid can be composed of:
 - [ ] grid item
     The children (e.g. direct descendants) of the grid container.

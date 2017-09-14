@@ -58,8 +58,10 @@ img {
   text-align: center;
 }
 
+/*You could use grid-column-start: 2; grid-column-end: 5; or just grid-column: 2/5 for shorthand */
+/*You could also use span with the shorthand property grid-column: 2/span 3; */
 .grid-btn0 {
-  grid-row: 2;
+  grid-row-start: 2;
 }
 
 /*.grid-btn1 {
@@ -93,7 +95,7 @@ img {
 
 #overlay {
   font-size: 1.5em;
-  grid-row: 1/2;
+  grid-row-start: 1;
   background-color: rgba(49,121,207, 0.5);
   z-index: 20;
 }
@@ -113,8 +115,7 @@ img {
   margin: 0;
   padding: 0;
   /*grid-auto-columns: minmax(50px, 100px);*/
-  grid-column: 1/1;
-  grid-row: 1/13;
+  grid-column-start: 1;
   font-size: 0.7em;
   background: #fff;
   overflow-x: hidden;
@@ -127,13 +128,14 @@ img {
 
 #cover {
   background: orange;
-  grid-column: 2/5;
-  grid-row: 1/2;
+  grid-column-start: 2;
+  grid-column-end: span 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
   height: 50%;
   overflow: auto;
 
 }
-
 #intro {
   padding: 20px;
   grid-row: 2/3;
@@ -144,7 +146,7 @@ img {
 
 #grid-features {
   background: #ffd800;
-  grid-row: 3;
+  grid-row-start: 3;
   grid-column: 2/5;
 }
 

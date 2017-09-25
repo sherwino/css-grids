@@ -48,6 +48,15 @@ First it starts with:
 If grid items aren't explicitly placed with grid-area, grid-column, grid-row, etc., they are automatically placed according to their order in the source code. We can override this using the order property, which is one of the advantages of grid over table-based layout.
 
 By default, all grid items have an order of 0, but this can be set to any positive or negative value, similar to z-index.
+
+grid-template is a shorthand property that combines grid-template-rows and grid-template-columns.
+
+For example, grid-template: 50% 50% / 200px; will create a grid with two rows that are 50% each, and one column that is 200 pixels wide.
+
+
+CSS Grid Final Excercise
+https://i.gyazo.com/a06cd2e4e94f13641864c1372d5a40f0.png
+
 This is for later ^^^^^ overlapping
 
 

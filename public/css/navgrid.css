@@ -10,6 +10,7 @@
 }
 
 .grid-nav > a {
+  color: #000;
   background: #fff;
   border: 2px solid #fff;
   border-radius: 3px;
@@ -19,7 +20,7 @@
 }
 
 .grid-nav > a:hover {
-  border: 2px solid orange;
+  border: 2px solid #2B69F7;
 }
 
 .grid-nav > a:nth-child(odd){

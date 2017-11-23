@@ -12,13 +12,17 @@ img {
   width: 100%;
 }
 
+section {
+  margin: 0 20px;
+}
+
 /* This is the main CSS Grid Container, the grandpappy */
 /*You could use grid-column-start: 2; grid-column-end: 5; or just grid-column: 2/5 for shorthand */
 /*You could also use span with the shorthand property grid-column: 2/span 3; */
 .page-container {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(6, auto);
+    grid-template-rows: 0.3fr 0.7fr 1fr 1fr 1fr 1fr;
     grid-gap: 0.1em;
 }
 
@@ -34,6 +38,7 @@ img {
   background: linear-gradient(60deg,#306efe,#003ab7);
   padding: 0 25px;
   color: #fff;
+  border-radius: 0 0 5px 5px;
   height: 330px;
   grid-column-start: 2;
   grid-column-end: 4;
@@ -66,12 +71,19 @@ img {
   padding: 20px;
   grid-row: 3;
   grid-column: 2;
-  background: #ccc;
   /*overflow: auto;*/
 }
 
+#intro:hover {
+  background: #eee;
+}
+
 #grid-features {
-  background: #ffd800;
+  padding: 20px;
   grid-row-start: 4;
   grid-column: 2/3;
+}
+
+#grid-features:hover {
+  background: #eee;
 }

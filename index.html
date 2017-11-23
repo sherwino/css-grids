@@ -4,70 +4,57 @@
 
     <head>
         <meta charset="utf-8">
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
         <title> CSS Grid - Quick Start Guide </title>
 
         <!-- Stylesheets -->
         <link rel="stylesheet" href="./public/css/gridstyle.css">
+        <!-- Icons -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Hind" rel="stylesheet">
     </head>
 
+<!-- This is a CSS Grid Container -->
     <body class="page-container">
         <aside class="side-container header">
-
-          <div class="grid-brand">
-            <a class="nav-link" href="#top"><div id="overlay">CSS Grid</div></a>
-            <a class="nav-link" href="#intro"><div class="grid-btn0">Intro</div></a>
-            <a class="nav-link" href="#grid-features"><div class="grid-btn1">Features</div></a>
-            <a class="nav-link" href="#temp"><div class="grid-btn5">grid-template</div></a>
-            <a class="nav-link" href="#temp-columns"><div class="grid-btn2">grid-template-columns</div></a>
-            <a class="nav-link" href="#temp-rows"><div class="grid-btn3">grid-template-rows</div></a>
-            <a class="nav-link" href="#temp-areas"><div class="grid-btn4">grid-template-areas</div></a>
-            <a class="nav-link" href="#gap"><div class="grid-btn8">grid-gap</div></a>
-            <a class="nav-link" href="#col-gap"><div class="grid-btn6">grid-column-gap</div></a>
-            <a class="nav-link" href="#row-gap"><div class="grid-btn7">grid-row-gap</div></a>
+          <div class="grid-nav">
+            <a class="nav-link" id="brand" href="#top"></a>
+            <a class="nav-link" id="intro-btn" href="#intro">Intro</a>
+            <a class="nav-link" id="features-btn" href="#grid-features">Features</a>
+            <a class="nav-link" id="terms-btn" href="#terms">Key Terms</a>
+            <a class="nav-link" id="properties-btn" href="#properties">Properties</a>
+            <a class="nav-link" id="-btn" href="#temp-columns">grid-template-columns</a>
+            <a class="nav-link" id="-btn" href="#temp-rows">grid-template-rows</a>
+            <a class="nav-link" id="-btn" href="#temp-areas">grid-template-areas</a>
+            <a class="nav-link" id="-btn" href="#gap">grid-gap</a>
+            <a class="nav-link" id="-btn" href="#col-gap">grid-column-gap</a>
+            <a class="nav-link" id="-btn" href="#row-gap">grid-row-gap</a>
           </div>
-
-            <!-- <nav class="side-nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link brand" href="#top">CSS Grid</a></li>
-                    <li class="nav-item"><a class="nav-link" </li>
-                        <ul class="sub-list">
-                            <li class="sub-item"><a class="nav-link" href="#item">Grid Item</a></li>
-                            <li class="sub-item"><a class="nav-link" href="#line">Grid Line</a></li>
-                            <li class="sub-item"><a class="nav-link" href="#track">Grid Track</a></li>
-                            <li class="sub-item"><a class="nav-link" href="#cell">Grid Cell</a></li>
-                            <li class="sub-item"><a class="nav-link" href="#area">Grid Area</a></li>
-                            <li class="sub-item"><a class="nav-link" href="#gap">Grid Gap</a></li>
-                        </ul>
-                        <li class="nav-item"><a class="nav-link" href="#container-prop">Container Properties</a></li> -->
-                            <!-- <ul class="sub-list">
-                                <li class="sub-item"><a class="nav-link" href="#temp-columns">grid-template-columns</a></li>
-                                <li class="sub-item"><a class="nav-link" href="#temp-rows">grid-template-rows</a></li>
-                                <li class="sub-item"><a class="nav-link" href="#temp-areas">grid-template-areas</a></li>
-                                <li class="sub-item"><a class="nav-link" href="#temp">grid-template</a></li>
-                                <li class="sub-item"><a class="nav-link" href="#col-gap">grid-column-gap</a></li>
-                                <li class="sub-item"><a class="nav-link" href="#row-gap">grid-row-gap</a></li>
-                                <li class="sub-item"><a class="nav-link" href="#gap">grid-gap</a></li>
-                                <li class="sub-item"><a class="nav-link" href="#justify-items">justify-items</a></li>
-                                <li class="sub-item"><a class="nav-link" href="#align-items">align-items</a></li>
-                                <li class="sub-item"><a class="nav-link" href="#justify-content">align-items</a></li>
-                                <li class="sub-item"><a class="nav-link" href="#align-content">align-content</a></li>
-
-                            </ul> -->
-
-                <!-- </ul>
-            </nav> -->
         </aside>
 
+        <div class="nav-spacer"></div>
+
         <section id="cover">
-            <figure id="top">
-                <img src="./public/img/cssgrids.jpg">
+          <h1 class="title" id="top">CSS Grid</h1>
+          <h2 class="subtitle">A Quick Start Guide</h1>
+        </section>
+        
+            <figure>
+                <!-- <img src="./public/img/cssgrids.jpg"> -->
                 <figure-caption>
-                    <h3>CSS Grid - Quick Start Guide</h3>
-                        <small>A small guide demonstrating the power of CSS Grid, while showing you some of its properties.</small>
+                      <h3>Jump into the powerful CSS3 property CSS Grid</h3>
+                        <small>
+                          This guide was inspired by a talk by Morten Rand-Hendriksen
+                          <a href="https://www.youtube.com/watch?v=txZq7Laz7_4"><i>CSS Grid Changes Everything</i>.</a>
+                          After watching that I was convinced that I wanted to play with this CSS property,
+                           real quick. A lot of the resources I show here originates from the talk, but the finer details come from this
+                          <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">guide</a> from CSS-Tricks, and this
+                          <a href="https://mozilladevelopers.github.io/playground/css-grid">guide</a>.
+                        </small>
                 </figure-caption>
             </figure>
+
             <section id="intro">
 
                 <h3>Introduction</h3>
@@ -143,7 +130,7 @@
                 </p>
             </section>
 
-            <section id="grid-thingy">
+            <!-- <section id="grid-thingy">
 
                 <h3>Grid Thingy 1</h3>
 
@@ -217,7 +204,7 @@
 
             </footer>
 
-        </section>
+        </section> -->
 
         <!-- <figure id="cover">
           <img src="./public/img/cssgrids.jpg">

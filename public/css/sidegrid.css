@@ -3,7 +3,7 @@
   grid-row: 2;
   grid-column: 3;
   font-size: 50px;
-  background: green;
+  padding: 0 25%;
 }
 
 #figure-side a > img {
@@ -11,8 +11,11 @@
   width: auto;
 }
 
+#figure-side > a {
+  color: #000;
+}
+
 #intro-side {
   grid-row: 3;
   grid-column: 3;
-  background: #ccc;
 }

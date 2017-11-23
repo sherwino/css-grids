@@ -11,11 +11,14 @@
         <link rel="stylesheet" href="./public/css/gridstyle.css">
         <link rel="stylesheet" href="./public/css/navgrid.css">
         <link rel="stylesheet" href="./public/css/sidegrid.css">
+        <link rel="stylesheet" href="./public/css/prism.css">
         <!-- Icons -->
         <script src="https://use.fontawesome.com/6ba74b9513.js"></script>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Hind" rel="stylesheet">
+        <!-- JavaScript -->
+        <script src="./public/css/prism.js"></script>
     </head>
 
 <!-- This is a CSS Grid Container -->
@@ -54,7 +57,7 @@
                         </p>
                 </figure-caption>
             </figure>
-<!-- This is a Grid inside of a Grid, and it is going to contain all the right side content -->
+<!-- This is going to contain all the right side content -->
             <aside id="figure-side">
                 <a href="https://www.youtube.com/watch?v=txZq7Laz7_4"><i class="fa fa-youtube" aria-hidden="true"></i></a>
                 <div></div>
@@ -63,18 +66,26 @@
                 <a href="https://mozilladevelopers.github.io/playground/css-grid"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Mozilla_logo.svg" alt="Mozilla Logo"></a>
             </aside>
             <aside id="intro-side">
-                <code>display: grid; </code>
-                <code>display: flexbox; </code>
-                <xmp>
-                    <section class="container">
-                </xmp>
-                <code> display: grid </code>
-                <xmp>
-                    .container {
-                        display: grid;
-                    }
-                </xmp>
-              </div>
+
+                <code class="language-css">
+                  display: grid;
+                <br>
+                  display: flexbox;
+                </code>
+                <br>
+                <code class="language-markup">
+                  &lt;section class="container">
+                    <p>All your content</p>
+                  &lt;/section>
+                </code>
+                  <br>
+                <code class="language-css">
+                  .container {
+
+                    display: grid;
+                  }
+                </code>
+
             </aside>
 
             <section id="intro">
@@ -115,8 +126,9 @@
 
                 <h4>What is a CSS Grid?</h4>
                 <p>
-                    CSS Grid <code>display: grid; </code> is designed to help you create organized CSS layouts using a grid system.
-                    It's similar to using <code>display: flexbox; </code> except it is two-dimensional.
+                    CSS Grid
+                    <pre><code>display: grid; </code></pre> is designed to help you create organized CSS layouts using a grid system.
+                    It's similar to using <pre><code>display: flexbox; </code></pre> except it is two-dimensional.
                 </p>
 
                 <h4>Why would you use this?</h4>
@@ -127,106 +139,25 @@
 
                 <p>
                     All you need is a container or a wrapper around your content.
-                    <xmp>
+                    <pre>
+                    <code>
                         <div class="container">
                         <section class="container">
                         <article class="container">
-                    </xmp>
-                    Then you just style it with: <code> display: grid </code>
+                    </code>
+                  </pre>
+                    Then you just style it with: <pre><code> display: grid </code></pre>
                     For example:
-                        <xmp>
+                    <pre>
+                        <code>
                             .container {
                                 display: grid;
                             }
-                        </xmp>
-
+                        </code>
+                      </pre>
                     Pretty simple, right?
                 </p>
             </section>
-
-            <!-- <section id="grid-thingy">
-
-                <h3>Grid Thingy 1</h3>
-
-                <h4>What is a CSS Grid?</h4>
-                <p>
-                    CSS Grid <code>display: grid; </code> is designed to help you create organized CSS layouts using a grid system.
-                    It's similar to using <code>display: flexbox; </code> except it is two-dimensional.
-                </p>
-
-                <h4>Why would you use this?</h4>
-                <p>
-                    Well, almost everything you know about styling a webpage is a hack.
-                    Using tables, floats, and a variety of other tricks to layout a page were just hacks to make some things work.
-                </p>
-
-                <p>
-                    All you need is a container or a wrapper around your content.
-                    <xmp>
-                        <div class="container">
-                        <section class="container">
-                        <article class="container">
-                    </xmp>
-                    Then you just style it with: <code> display: grid </code>
-                    For example:
-                        <xmp>
-                            .container {
-                                display: grid;
-                            }
-                        </xmp>
-
-                    Pretty simple, right?
-                </p>
-            </section>
-
-            <section id="grid-thingy2">
-
-                <h3>Grid Thingy 2</h3>
-
-                <h4>What is a CSS Grid?</h4>
-                <p>
-                    CSS Grid <code>display: grid; </code> is designed to help you create organized CSS layouts using a grid system.
-                    It's similar to using <code>display: flexbox; </code> except it is two-dimensional.
-                </p>
-
-                <h4>Why would you use this?</h4>
-                <p>
-                    Well, almost everything you know about styling a webpage is a hack.
-                    Using tables, floats, and a variety of other tricks to layout a page were just hacks to make some things work.
-                </p>
-
-                <p>
-                    All you need is a container or a wrapper around your content.
-                    <xmp>
-                        <div class="container">
-                        <section class="container">
-                        <article class="container">
-                    </xmp>
-                    Then you just style it with: <code> display: grid </code>
-                    For example:
-                        <xmp>
-                            .container {
-                                display: grid;
-                            }
-                        </xmp>
-
-                    Pretty simple, right?
-                </p>
-            </section>
-
-            <footer>
-
-            </footer>
-
-        </section> -->
-
-        <!-- <figure id="cover">
-          <img src="./public/img/cssgrids.jpg">
-          <figure-caption>
-            <h3>CSS Grid - Quick Start Guide</h3>
-            <small>A small guide demonstrating the power of CSS Grid, while showing you some of its properties.</small>
-          </figure-caption>
-        </figure> -->
 
 
     </body>

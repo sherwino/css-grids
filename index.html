@@ -9,8 +9,11 @@
 
         <!-- Stylesheets -->
         <link rel="stylesheet" href="./public/css/gridstyle.css">
+        <link rel="stylesheet" href="./public/css/navgrid.css">
+        <link rel="stylesheet" href="./public/css/sidegrid.css">
         <!-- Icons -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://use.fontawesome.com/6ba74b9513.js"></script>
+
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Hind" rel="stylesheet">
     </head>
@@ -39,31 +42,48 @@
           <h1 class="title" id="top">CSS Grid</h1>
           <h2 class="subtitle">A Quick Start Guide</h1>
         </section>
-        
-            <figure>
+
+            <figure id="figure">
                 <!-- <img src="./public/img/cssgrids.jpg"> -->
                 <figure-caption>
                       <h3>Jump into the powerful CSS3 property CSS Grid</h3>
-                        <small>
-                          This guide was inspired by a talk by Morten Rand-Hendriksen
-                          <a href="https://www.youtube.com/watch?v=txZq7Laz7_4"><i>CSS Grid Changes Everything</i>.</a>
-                          After watching that I was convinced that I wanted to play with this CSS property,
-                           real quick. A lot of the resources I show here originates from the talk, but the finer details come from this
-                          <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">guide</a> from CSS-Tricks, and this
-                          <a href="https://mozilladevelopers.github.io/playground/css-grid">guide</a>.
-                        </small>
+                        <p>
+                          This guide was inspired by a talk by Morten Rand-Hendriksen.After watching that I was convinced that I
+                          wanted to play with this CSS property, real quick. A lot of the concepts covered in this site originates from
+                          the talk, but the finer details come from a guide by CSS-Tricks, and another from Mozilla.
+                        </p>
                 </figure-caption>
             </figure>
+<!-- This is a Grid inside of a Grid, and it is going to contain all the right side content -->
+            <aside id="figure-side">
+                <a href="https://www.youtube.com/watch?v=txZq7Laz7_4"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                <div></div>
+                <a href="https://css-tricks.com/snippets/css/complete-guide-grid/"><img src="https://cdn.css-tricks.com/wp-content/uploads/2014/03/css-tricks-star.png" alt="CSS Tricks Logo"></a>
+                <div></div>
+                <a href="https://mozilladevelopers.github.io/playground/css-grid"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Mozilla_logo.svg" alt="Mozilla Logo"></a>
+            </aside>
+            <aside id="intro-side">
+                <code>display: grid; </code>
+                <code>display: flexbox; </code>
+                <xmp>
+                    <section class="container">
+                </xmp>
+                <code> display: grid </code>
+                <xmp>
+                    .container {
+                        display: grid;
+                    }
+                </xmp>
+              </div>
+            </aside>
 
             <section id="intro">
-
                 <h3>Introduction</h3>
                 <h4>What is a CSS Grid?</h4>
                 <p>
-                    CSS Grid (<code>display: grid; </code>) is designed to help you create organized CSS layouts using a grid system.
-                    It's similar to using (<code>display: flexbox; </code>) except it is two-dimensional.
+                    CSS Grid is designed to help you create organized CSS layouts using a grid system.
+                    It's similar to using except it is two-dimensional.
                 </p>
-
                 <h4> Mozilla Developer Network defines it as:</h4>
                 <quote>
                   The grid CSS property is a shorthand property that sets all of the explicit grid properties (grid-template-rows,
@@ -79,17 +99,11 @@
 
                 <p>
                     All you need is a container or a wrapper around your content.
-                    <xmp>
-                        <section class="container">
-                    </xmp>
 
-                    Then you just style it with: <code> display: grid </code>
+
+                    Then you just style it with:
                     For example:
-                        <xmp>
-                            .container {
-                                display: grid;
-                            }
-                        </xmp>
+
 
                     Pretty simple, right?
                 </p>

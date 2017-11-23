@@ -1,0 +1,18 @@
+/*...but wait there is icing on the side...dammit too much sugar */
+#figure-side {
+  grid-row: 2;
+  grid-column: 3;
+  font-size: 50px;
+  background: green;
+}
+
+#figure-side a > img {
+  height: 50px;
+  width: auto;
+}
+
+#intro-side {
+  grid-row: 3;
+  grid-column: 3;
+  background: #ccc;
+}

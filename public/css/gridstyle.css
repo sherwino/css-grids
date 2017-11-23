@@ -12,7 +12,34 @@ img {
   width: 100%;
 }
 
-/*TITLE*/
+/* This is the main CSS Grid Container, the grandpappy */
+/*You could use grid-column-start: 2; grid-column-end: 5; or just grid-column: 2/5 for shorthand */
+/*You could also use span with the shorthand property grid-column: 2/span 3; */
+.page-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(6, auto);
+    grid-gap: 0.1em;
+}
+
+/*Spacer for the fixed nav below, it just needs some space*/
+.nav-spacer {
+  grid-column-start: 1;
+  width: 169px;
+}
+
+
+/* This is the top of the page, where you put the icing and some title stuff */
+#cover {
+  background: linear-gradient(60deg,#306efe,#003ab7);
+  padding: 0 25px;
+  color: #fff;
+  height: 330px;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row: 1/1;
+}
+
 .title {
   font-size: 4em;
   text-align: center;
@@ -29,90 +56,22 @@ img {
   margin: 0;
 }
 
-/*MAIN CSS GRID CONTAINER*/
-/*You could use grid-column-start: 2; grid-column-end: 5; or just grid-column: 2/5 for shorthand */
-/*You could also use span with the shorthand property grid-column: 2/span 3; */
-.page-container {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    /*grid-auto-rows: minmax(auto-fit, 1fr);*/
-    /*grid-auto-columns: minmax(30px, 120px) minmax(max-content, 2fr) minmax(max-content, 2fr) minmax(max-content, 2fr);*/
-    grid-gap: 0.1em;
-    /*grid-template-columns: 1fr, 3r;*/
-    /*grid-template-areas:*/
-    /*grid-auto-rows: minmax(100px, 1080px);*/
-    /*justify-content: stretch;*/
-    /*align-items: stretch;*/
-}
-
-/*SPACER FOR THE FIXED NAVBAR*/
-.nav-spacer {
-  grid-column-start: 1;
-  width: 169px;
-}
-
-/*NAV IS INSIDE ITS OWN GRID*/
-.grid-nav {
-  position: fixed;
-  display: grid;
-  margin: 0 auto;
-  grid-template-columns: minmax(46px, 169px);
-  /*grid-template-rows: repeat(auto-fill, minmax(30px, 1fr));*/
-  /*grid-auto-rows: minmax(1fr, 2fr);*/
-}
-
-.grid-nav > a {
-  background: #fff;
-  border: 2px solid #fff;
-  border-radius: 3px;
-  padding: 0.2em 0;
-  text-align: center;
-  text-decoration: none;
-}
-
-.grid-nav > a:hover {
-  border: 2px solid orange;
-}
-
-.grid-nav > a:nth-child(odd){
-  background: #eee;
-  text-align: center;
-}
-
-#brand {
-  font-size: 1.5em;
-  grid-row-start: 1;
-  height: 150px;
-  background: url(../img/grid-logo.png);
-  background-position: left;
-}
-
-#intro-btn {
+/* This is where the cake begins, with strawberries */
+#figure {
   grid-row-start: 2;
+  grid-column: 2;
 }
 
-/*PAGE BODY/SECTION CONTAINERS*/
-
-#cover {
-  background: linear-gradient(60deg,#306efe,#003ab7);
-  padding: 0 25px;
-  color: #fff;
-  height: 330px;
-  grid-column-start: 2;
-  grid-column-end: 6;
-  grid-row: 1/1;
-}
 #intro {
   padding: 20px;
-  grid-row: 2/3;
-  grid-column: 2/5;
+  grid-row: 3;
+  grid-column: 2;
   background: #ccc;
   /*overflow: auto;*/
 }
 
 #grid-features {
   background: #ffd800;
-  grid-row-start: 3;
-  grid-column: 2/5;
+  grid-row-start: 4;
+  grid-column: 2/3;
 }

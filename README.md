@@ -1,15 +1,19 @@
 # CSS Grid
-An HTML, JS, and CSS static site that utilizes CSS Grid
+An HTML, JS, and CSS website that utilizes CSS Grid 
 
-The main objective of this site is to get familiar laying out responsive pages without using frameworks like Twitter's Bootstrap.
+The main objective of this site is so that I can get familiar laying out responsive pages without using frameworks like Twitter's Bootstrap (sorry guys), while guiding users through some of the CSS Grid concepts.
 
-CSS Grid are compatible with most modern browsers and give us an opportunity to avoid all of the common hacks seen today.
+CSS Grid features are compatible with most modern browsers and give us an opportunity to avoid all of the common hacks seen to make site be laid out a certain way.
+
+The best part of it all is that no libraries, or frameworks needed.
+
+I will most likely have to use [@media](https://devdocs.io/css/@media) queries.
 
 ## Grid Properties
 
-When creating this site I am going to attempt to use all of the properties of CSS Grid. As soon as these properties are featured in the site I will check them off. All of the definitions come from [https://css-tricks.com/snippets/css/complete-guide-grid/]
+I am going to attempt to use all of the properties of CSS Grid in this site while describing them. As soon as these properties are featured in the site I will check them off. All of the definitions come from [CSS-Tricks](https://css-tricks.com/snippets/css/complete-guide-grid/), [MDN](https://mozilladevelopers.github.io/playground/css-grid/), and this great [video](https://www.youtube.com/watch?v=txZq7Laz7_4)
 
-First it starts with:
+First lets start with the checklist:
 - [ ] display: grid, inline-grid, subgrid
     The element on which display: grid is applied. It's the direct parent of all the grid items. In this example container is the grid container.
 

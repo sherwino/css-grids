@@ -14,7 +14,9 @@ I will most likely have to use [@media](https://devdocs.io/css/@media) queries.
 I am going to attempt to use all of the properties of CSS Grid in this site while describing them. As soon as these properties are featured in the site I will check them off. All of the definitions come from [CSS-Tricks](https://css-tricks.com/snippets/css/complete-guide-grid/), [MDN](https://mozilladevelopers.github.io/playground/css-grid/), and this great [video](https://www.youtube.com/watch?v=txZq7Laz7_4)
 
 First lets start with the checklist:
-- [ ] display: grid, inline-grid, subgrid
+- [ ] ```display: grid```
+                  ```inline-grid```
+                  ```subgrid```
     The element on which display: grid is applied. It's the direct parent of all the grid items. In this example container is the grid container.
 
     grid - generates a block-level grid

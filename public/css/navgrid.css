@@ -6,7 +6,7 @@
   display: grid;
   margin: 0 auto;
   grid-template-columns: minmax(46px, 169px);
-  grid-template-rows: 150px repeat(18, .75fr);
+  grid-template-rows: 1fr repeat(18, .75fr);
 
 }
 
@@ -21,7 +21,8 @@
 }
 
 .grid-nav > a:hover {
-  border: 2px solid #2B69F7;
+  opacity: 0.5;
+  color: #003AB8;
 }
 
 .grid-nav > a:nth-child(odd){
@@ -33,27 +34,30 @@
 #brand {
   font-size: 1.5em;
   grid-row-start: 1;
-  height: 150px;
+  height: 100%;
   background: url(../img/grid-logo.png);
   background-position: left;
+  background-size: 100%;
 }
 
 #nav-footer {
-  grid-row-start: 15;
+  grid-row-start: -1; 
   display: grid;
   grid-template-columns: 33% 33% 33%;
   /* grid-template-rows: 1fr; */
   color: #2B69F7;
   text-align: center;
-  padding: 15px 0;
+  padding: 1em 0;
+}
+
+#nav-footer > a:visited {
+  color: #000;
 }
 
 #nav-footer > a:hover {
   color: #003AB8;
 }
-#nav-footer > a:visited {
-  color: #000;
-}
+
 
 #git {
   grid-column-start: 1;

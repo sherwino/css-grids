@@ -16,20 +16,26 @@ section {
   margin: 0 20px;
 }
 
+
+
 /* This is the main CSS Grid Container, the grandpappy */
 /*You could use grid-column-start: 2; grid-column-end: 5; or just grid-column: 2/5 for shorthand */
 /*You could also use span with the shorthand property grid-column: 2/span 3; */
 .page-container {
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: 0.3fr 0.7fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 169px repeat(3, auto);
+    grid-template-rows: 0.3fr 0.8fr repeat(5, auto);
     grid-gap: 0.1em;
+}
+
+/* At this resolution we have to do something with the navbar */
+@media screen and (max-width: 562px) {
+
 }
 
 /*Spacer for the fixed nav below, it just needs some space*/
 .nav-spacer {
   grid-column-start: 1;
-  width: 169px;
 }
 
 
@@ -69,7 +75,7 @@ section {
 
 #intro {
   padding: 20px;
-  grid-row: 3;
+  grid-row: 3 3;
   grid-column: 2;
   /*overflow: auto;*/
 }
@@ -81,9 +87,16 @@ section {
 #grid-features {
   padding: 20px;
   grid-row-start: 4;
-  grid-column: 2/3;
+  grid-column: 2;
 }
 
 #grid-features:hover {
   background: #eee;
+}
+
+#key-terms {
+  /* padding: 20px;
+  grid-row-start: 5; */
+  grid-column: 2;
+  /*overflow: auto;*/
 }

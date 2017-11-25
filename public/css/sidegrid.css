@@ -21,3 +21,8 @@
   padding-top: 160px;
 }
 
+@media screen and (max-width: 750px) {
+  #figure-side, #intro-side {
+    display: none;
+  }
+}

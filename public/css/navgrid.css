@@ -23,6 +23,7 @@
 .grid-nav > a:hover {
   opacity: 0.5;
   color: #003AB8;
+  
 }
 
 .grid-nav > a:nth-child(odd){
@@ -56,6 +57,9 @@
 
 #nav-footer > a:hover {
   color: #003AB8;
+  box-shadow: 0px 4px 12px 1px rgba(230, 230, 230, .4);
+  -moz-box-shadow: 0px 4px 12px 1px rgba(230, 230, 230, .4);
+  transform: translateY(-0.25em);
 }
 
 
